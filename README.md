@@ -1,4 +1,4 @@
-M9 for the Droid Incredible
+CM9 for the Droid Incredible
 
 ## Info
 
