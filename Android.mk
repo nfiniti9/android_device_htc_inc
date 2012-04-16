@@ -24,6 +24,7 @@ endif
 
 LOCAL_PATH := $(call my-dir)
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
 # Least specific includes go first, so that they can get
 # overridden further down
 include $(CLEAR_VARS)
