@@ -26,10 +26,12 @@ repo init -u git://github.com/CyanogenMod/android.git -b ics
 ```bash
 cd ~/cm9/.repo
 curl -O https://github.com/drkhd/android_device_htc_inc/raw/ics/Manifest/local_manifest.xml
+cd ..
 ```
 
 ### Download the source
 ```bash
+cd ~/cm9
 repo sync -j16
 ```
 NOTE: This WILL take a long time.
