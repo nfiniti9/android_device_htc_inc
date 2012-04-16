@@ -24,9 +24,7 @@ repo init -u git://github.com/CyanogenMod/android.git -b ics
 
 ### Finish setting up repo
 ```bash
-cd ~/cm9/.repo
-curl -O https://github.com/drkhd/android_device_htc_inc/raw/ics/Manifest/local_manifest.xml
-cd ..
+wget -O .repo/local_manifest.xml https://raw.github.com/drkhd/android_device_htc_inc/ics/Manifest/local_manifest.xml
 ```
 
 ### Download the source
