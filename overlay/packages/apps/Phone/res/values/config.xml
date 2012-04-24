@@ -14,15 +14,49 @@
      limitations under the License.
 -->
 
-<!-- Crespo-specific phone app resources. -->
+<!-- Passion-specific phone app resources. -->
 <resources>
 
-    <!-- Determine whether calls to mute the microphone in PhoneUtils
-         are routed through the android.media.AudioManager class (true) or through
-         the com.android.internal.telephony.Phone interface (false). -->
+    <!-- Enable the onscreen touch UI for all states of the in-call UI. -->
+    <!-- cuviper: not in ICS
+    <bool name="allow_incoming_call_touch_ui">true</bool>
+    <bool name="allow_in_call_touch_ui">true</bool>
+    -->
+
+    <!-- OTA configuration values, used when provisioning CDMA devices.
+         Following defaults values of zero means OTA UI is completely disabled.
+         These OTA UI can be enabled by setting config value to one in the product
+         specific overlay file -->
+
+    <!-- Determine whether we want to display the OTA activation screen, which
+         gives the user option to activate or cancel -->
+    <integer name="OtaShowActivationScreen">1</integer>
+    <!-- Determine whether we should show the "listen for instructions" screen after
+         successfully placing the OTA call -->
+    <integer name="OtaShowListeningScreen">1</integer>
+    <!-- The number of times we should show the activation screen/allow the provisioning
+         to fail before just showing an unsuccessful dialog -->
+    <integer name="OtaShowActivateFailTimes">0</integer>
+    <!-- Determine whether or not we should play the success/failure tone -->
+    <integer name="OtaPlaySuccessFailureTone">0</integer>
+
+    <!-- This is a device with capacitive buttons, so disable the feature
+         where BACK rejects the current incoming call.  (Since it's so
+         easy to press the key accidentally as you pull the phone out of
+         your pocket.) -->
+    <!-- cuviper: not in ICS
+    <bool name="allow_back_key_to_reject_incoming_call">false</bool>
+    -->
+
+    <!-- Enable the onscreen "Dial" button in the emergency dialer. -->
+    <bool name="config_show_onscreen_dial_button">true</bool>
+
+    <!-- This device uses libaudio-qsd8k which implements
+         AudioHardware::setMicMute(bool state) and AudioHardware::getMicMute(bool* state)
+         so microphone muting calls should be routed through the AudioManager API. -->
     <bool name="send_mic_mute_to_AudioManager">true</bool>
 
-    <!-- Determines if device implements a noise suppression device for in call audio-->
+    <!-- This device implements a noise suppression device for in call audio-->
     <bool name="has_in_call_noise_suppression">true</bool>
 
 </resources>

@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.error.receiver.system.apps=com.google.android.feedback \
-	ro.setupwizard.enterprise_mode=1 \
 	ro.com.google.clientidbase=android-verizon \
 	ro.com.google.locationfeatures=1 \
 	ro.cdma.home.operator.alpha=Verizon \
@@ -63,12 +62,12 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/base/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
-    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
 # Touchscreen
@@ -141,8 +140,8 @@ PRODUCT_PACKAGES += \
     audio_policy.qsd8k
 # GPU
 PRODUCT_PACKAGES += \
-    copybit.qsd8k \
     gralloc.qsd8k \
+    copybit.qsd8k \
     hwcomposer.qsd8k \
     libgenlock \
     libmemalloc \
@@ -200,4 +199,3 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_NAME := full_inc
 PRODUCT_DEVICE := inc
-PRODUCT_MODEL := Full Android on Inc
