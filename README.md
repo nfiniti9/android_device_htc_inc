@@ -35,8 +35,16 @@ repo sync -j16
 NOTE: This WILL take a long time.
 
 ### Build
+Make sure we're in ~/cm9...
 ```bash
 cd ~/cm9
+```
+Pull in the prebuilts, like Rom Manager...
+```bash
+./vendor/cm/get-prebuilts
+```
+And build!
+```bash
 . build/envsetup.sh && brunch inc
 ```
 

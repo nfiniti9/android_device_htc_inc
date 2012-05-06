@@ -14,16 +14,10 @@
      limitations under the License.
 -->
 
-<!-- Passion-specific phone app resources. -->
+<!-- Inc-specific phone app resources. -->
 <resources>
 
-    <!-- Enable the onscreen touch UI for all states of the in-call UI. -->
-    <!-- cuviper: not in ICS
-    <bool name="allow_incoming_call_touch_ui">true</bool>
-    <bool name="allow_in_call_touch_ui">true</bool>
-    -->
-
-    <!-- OTA configuration values, used when provisioning CDMA devices.
+   <!-- OTA configuration values, used when provisioning CDMA devices.
          Following defaults values of zero means OTA UI is completely disabled.
          These OTA UI can be enabled by setting config value to one in the product
          specific overlay file -->
@@ -54,7 +48,7 @@
     <!-- This device uses libaudio-qsd8k which implements
          AudioHardware::setMicMute(bool state) and AudioHardware::getMicMute(bool* state)
          so microphone muting calls should be routed through the AudioManager API. -->
-    <bool name="send_mic_mute_to_AudioManager">true</bool>
+   <bool name="send_mic_mute_to_AudioManager">true</bool>
 
     <!-- This device implements a noise suppression device for in call audio-->
     <bool name="has_in_call_noise_suppression">true</bool>
