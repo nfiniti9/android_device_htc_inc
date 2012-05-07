@@ -1,5 +1,0 @@
-#!/system/bin/sh
-#
-# Set /data/local and /data/local/bin to mode 777
-
-chmod 777 /data/local /data/local/bin

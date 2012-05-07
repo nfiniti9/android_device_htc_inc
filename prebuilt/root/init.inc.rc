@@ -156,6 +156,10 @@ on boot
     # enable nano editor usage through adb
     export TERM linux
 
+    # fix for app development
+    chmod 777 /data/local
+    chmod 777 /data/local/bin
+
 service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
     -Dwext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
 #   we will start as root and wpa_supplicant will switch to user wifi
