@@ -4,9 +4,8 @@ CM9 for the Droid Incredible
 
 |||
 |-----------------------------------:|:--------------------------|
-|**Discussion thread**: | http://forum.xda-developers.com/showthread.php?t=1558923
-|**Bug List**:		| https://docs.google.com/spreadsheet/ccc?key=0ArO-AoPZJh5KdHd4N3UxdzBObEtEbWViSVBaVlhVTFE#gid=0
-|**Original build instructions**:|http://forum.xda-developers.com/showpost.php?p=23905364&postcount=2
+|**Discussion thread**: | http://forum.xda-developers.com/showthread.php?t=1668648
+|**Kanged from drk.hd**: | http://www.github.c/drkhd/android_device_htc_inc
 
 ## Building 
 
@@ -24,7 +23,7 @@ repo init -u git://github.com/CyanogenMod/android.git -b ics
 
 ### Finish setting up repo
 ```bash
-wget -O .repo/local_manifest.xml https://raw.github.com/drkhd/android_device_htc_inc/ics/Manifest/local_manifest.xml
+wget -O .repo/local_manifest.xml https://raw.github.com/invisiblek/android_device_htc_inc/ics/Manifest/local_manifest.xml
 ```
 
 ### Download the source
