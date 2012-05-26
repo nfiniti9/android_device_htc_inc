@@ -8,7 +8,7 @@
     <remove-project name="CyanogenMod/android_vendor_qcom_opensource_omx_mm-core" />
 
     <!-- local projects -->
-    <project path="device/htc/inc" name="drkhd/android_device_htc_inc" remote="github" />
+    <project path="device/htc/inc" name="invisiblek/android_device_htc_inc" remote="github" />
     <project path="device/htc/common" name="Evervolv/android_device_htc_common" remote="github" />
     <project path="vendor/htc" name="Evervolv/android_vendor_htc" remote="github" />
     <project path="hardware/qcom/media" name="Evervolv/android_hardware_qcom_media" remote="github" />
@@ -17,5 +17,5 @@
     <project path="vendor/qcom/opensource/omx/mm-core" name="Evervolv/android_vendor_qcom_opensource_omx_mm-core" remote="github" />
     <project path="vendor/qcom/opensource/omx/mm-video" name="Evervolv/android_vendor_qcom_opensource_omx_mm-video" remote="github" />
     <project path="hardware/msm7k" name="Evervolv/android_hardware_msm7k" remote="github" />
-    <project path="kernel/htc/qsd8k" name="Evervolv/android_kernel_htc_qsd8k" remote="github" />
+    <project path="kernel/htc/qsd8k" name="invisiblek/android_kernel_htc_qsd8k" remote="github" />
   </manifest>
