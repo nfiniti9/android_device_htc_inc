@@ -147,3 +147,6 @@ BOARD_CACHE_FILESYSTEM := auto
 
 # Make sure vold formats the proper sdcard partition
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
+
+# Choose texture target for old Adreno GPUs
+BOARD_ADRENO_DECIDE_TEXTURE_TARGET=true
