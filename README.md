@@ -5,7 +5,7 @@ CM9 for the Droid Incredible
 |||
 |-----------------------------------:|:--------------------------|
 |**Discussion thread**: | http://forum.xda-developers.com/showthread.php?t=1668648
-|**Kanged from drk.hd**: | http://www.github.c/drkhd/android_device_htc_inc
+|**Kanged from drk.hd**: | http://www.github.com/drkhd/android_device_htc_inc
 
 ## Building 
 
