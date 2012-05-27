@@ -98,6 +98,8 @@ TARGET_USE_OVERLAY := false
 TARGET_HAVE_BYPASS := false
 TARGET_USES_C2D_COMPOSITION := false
 
+BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
+
 # Allow fallback to ashmem
 TARGET_GRALLOC_USES_ASHMEM := true
 
@@ -147,6 +149,3 @@ BOARD_CACHE_FILESYSTEM := auto
 
 # Make sure vold formats the proper sdcard partition
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-
-# Choose texture target for old Adreno GPUs
-BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
