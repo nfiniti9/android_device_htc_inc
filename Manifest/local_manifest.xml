@@ -10,7 +10,7 @@
     <!-- local projects -->
     <project path="device/htc/inc" name="invisiblek/android_device_htc_inc" remote="github" />
     <project path="device/htc/common" name="Evervolv/android_device_htc_common" remote="github" />
-    <project path="vendor/htc" name="Evervolv/android_vendor_htc" remote="github" />
+    <project path="vendor/htc" name="invisiblek/android_vendor_htc" remote="github" />
     <project path="hardware/qcom/media" name="Evervolv/android_hardware_qcom_media" remote="github" />
     <project path="hardware/qcom/display" name="Evervolv/android_hardware_qcom_display" remote="github" />
     <project path="hardware/qcom/camera" name="Evervolv/android_hardware_qcom_camera" remote="github" />
