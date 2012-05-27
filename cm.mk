@@ -23,4 +23,5 @@ PRODUCT_CODENAME := CM9
 PRODUCT_VERSION_DEVICE_SPECIFIC := a9
 
 PRODUCT_PACKAGES += \
-    Camera
+    Camera \
+    Torch
